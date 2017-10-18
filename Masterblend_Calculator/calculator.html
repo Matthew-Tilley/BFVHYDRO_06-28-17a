@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<title>MASTERBLEND CALCULATOR - R062317A</title>
+		
+		<link	rel = "stylesheet"  type = "text/css"  href="calculator.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		
+	</head>
+		
+		
+		
+	<body>
+		
+		<div id = "wrapper">
+		
+			<p	class = "instructions">
+			Enter the capacity (volume) of your container in U.S. Gallons below.
+			</p>
+		
+			<form>
+			
+				<div 	id = "input_field_container"
+						class = "output_containers">
+						
+					<input	
+						id = 		"container_volume"
+					 	type = 		"number"
+					 	onchange = 	"compute_formula()">
+					
+					<button	id = "reset_input">
+					RESET
+					</button>
+					
+				</div>
+				
+				
+				<p 	class = "instructions">
+				Select the type of crop you intend to grow.
+				</p>
+				
+				
+				<div id = "dropdown_container">
+				
+					<select  id = "dropdown"  onchange = "compute_formula()">
+						
+						<option id = "greens"  	value = "greens">LEAFY GREENS</option>
+						<option id = "veggies"  value = "veggies">VEGGIES</option>
+						<option id = "flowers"  value = "flowers">FLOWERS</option>
+				
+					</select>
+					
+				</div>
+			
+				
+				<p class = "instructions">
+				Proper proportions for each component of the mixture are listed (in grams) below.
+				</p>
+				
+				
+				<div class = "output_containers">
+					
+					<h2	id = 	"masterblend"
+						class = "output_fields">
+					</h2>
+					<p class = "output_tags">MasterBlend</p>
+					
+				</div>
+				
+				
+				<div class = "output_containers">
+				
+					<h2	id = 	"calcium_nitrate"
+						class = "output_fields">
+					</h2>
+					<p class = "output_tags">Calcium Nitrate</p>
+					
+				</div>
+				
+				
+				<div class = "output_containers">
+				
+					<h2	id =	"magnesium_sulfate"
+						class = "output_fields">	
+					</h2>
+					<p class = "output_tags">Magnesium Sulfate</p>
+					
+				</div>
+			
+			</form>
+			
+			<script src = "jquery-3.1.1.js"></script>
+			<script src = "calculator.js"></script>
+			
+		</div>	
+				
+	</body>
+	
+</html>
